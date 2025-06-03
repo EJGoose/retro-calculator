@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Simple Calculator</title>
+
+</head>
+<body>
+    <main>
+        <h1>Welcome to the Calculator</h1>
+        <br>
+        <button class="calculatorBurger" onclick="expandCalculator()">|||</button>
+        <div class ="calculator">
+            <div class ="screen">
+                <span class="expression"></span>
+                <span class="result"></span>
+            </div>
+            <div class = "keypad">
+
+                <button onclick="calculatorClear()">C</button>
+                <button onclick="calculatorInput(' &#40; ')">&#40;</button>
+                <button onclick="calculatorInput(' &#41; ')">&#41;</button>
+                <button onclick="calculatorInput(' + ')">+</button>
+                <button onclick="calculatorInput('7')">7</button>
+                <button onclick="calculatorInput('8')">8</button>
+                <button onclick="calculatorInput('9')">9</button>
+                <button onclick="calculatorInput(' - ')">-</button>
+                <button onclick="calculatorInput('4')">4</button>
+                <button onclick="calculatorInput('5')">5</button>
+                <button onclick="calculatorInput('6')">6</button>
+                <button onclick="calculatorInput(' * ')">*</button>
+                <button onclick="calculatorInput('1')">1</button>
+                <button onclick="calculatorInput('2')">2</button>
+                <button onclick="calculatorInput('3')">3</button>
+                <button onclick="calculatorInput(' / ')">/</button>
+                <button onclick="calculatorInput('0')">0</button>
+                <button onclick="calculatorInput('.')">.</button>
+                <button class = "submit" onclick="calculatorAnswer()">=</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
